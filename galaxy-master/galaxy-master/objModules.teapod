@@ -1,0 +1,16 @@
+# <iostream>
+#pragma std
+# <liquidcrystal.sup>
+
+;;start js module
+try {
+	js import("main.js")
+	if errorlevel = fail {
+		then std::print.sel("impossible to import this module")
+		break;
+		return;
+	}
+}
+^/
+except.module.js
+/^
